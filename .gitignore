@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+scratch/
+.system_generated/
+raw_pages/
+*.py
+asset_mapping.json
+all_assets_list.txt
+img_urls.txt
+test*.png
+col_*.png

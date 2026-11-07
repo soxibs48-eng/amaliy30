@@ -1,0 +1,328 @@
+<!DOCTYPE html><!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Mon Feb 13 2023 22:58:11 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="fs-template-3.webflow.io" data-wf-page="60f14ecda93c1b13891e7858" data-wf-site="60f0076a5c6c5b3371344d6c" data-wf-status="1"><head><meta charset="utf-8"/><title>Company - Client First Template 3</title><meta content="Company - Client First Template 3" property="og:title"/><meta content="Company - Client First Template 3" name="twitter:title"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="Webflow" name="generator"/><link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"><link href="https://fonts.googleapis.com" rel="preconnect"/><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script><script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:100,200,300,regular,500,600,700,800,900"]  }});</script><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon"/><link href="assets/images/webclip.webp" rel="apple-touch-icon"/><!-- Please keep this css code to improve the font quality-->
+<style>
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style></head><body><div class="page-wrapper"><div class="global-styles w-embed"><style>
+
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+/* Prevent all click and hover interaction with an element */
+.pointer-events-off {
+	pointer-events: none;
+}
+
+/* Enables all click and hover interaction with an element */
+.pointer-events-on {
+  pointer-events: auto;
+}
+
+/* Create a class of .div-square which maintains a 1:1 dimension of a div */
+.div-square::after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* Adds inline flex display */
+.display-inlineflex {
+  display: inline-flex;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+</style></div><div class="nav"><div data-collapse="medium" data-animation="default" data-duration="200" data-easing="ease-in-out" data-easing2="ease-in-out" role="banner" class="nav_component w-nav"><div class="padding-global"><div class="nav_container"><a href="https://www.finsweet.com/" target="_blank" class="nav_logo-link w-nav-brand"><img src="assets/icons/finsweet-logo-full-white-68.svg" loading="lazy" alt="" class="nav_logo"/></a><nav role="navigation" class="nav_menu w-nav-menu"><div class="nav_link-list"><a href="index.html" class="nav_link w-nav-link">Home</a><a href="services.html" class="nav_link w-nav-link">Services</a><a href="company.html" aria-current="page" class="nav_link w-nav-link w--current">Company</a><a href="careers.html" class="nav_link w-nav-link">Careers</a><a href="blog.html" class="nav_link w-nav-link">Blog</a><a href="contact.html" class="nav_link w-nav-link">Contact us</a></div><a href="https://finsweet.info/client-first-template-3" target="_blank" class="nav_action-button-link w-inline-block"><div class="button-text is-nav-button"><div class="text-weight-medium">Clone project</div><div class="button-arrow-icon is-white w-embed"><svg width="100%" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 6H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 1L23 6L18 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div></a></nav><div class="nav_menu-button w-nav-button"><div class="nav_menu-icon w-embed"><svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="7" width="24" height="2" fill="currentColor"/>
+<rect x="8" width="16" height="2" fill="currentColor"/>
+<rect x="12" y="14" width="12" height="2" fill="currentColor"/>
+</svg></div></div></div></div></div></div><main class="main-wrapper"><header class="section_company-header"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="company_header_component"><div class="box_group-corner is-top-right"><div class="box_corner"><div class="box_corner inner-box"></div></div><div class="box_corner is-bottom-box"></div><div class="box_corner is-right-box"></div></div><div class="max-width-large"><div class="box_square background-color-light"></div><h2 class="text-style-subheader">Company</h2><h1 class="heading-style-h2">Award-winning company seen and used by millions around the world</h1><div class="padding-bottom padding-small"></div><p class="text-style-muted">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The Maker is a decentralized.</p></div><div class="company_header_image-row"><div class="company_header_image-wrapper"><img src="assets/images/home-2-55.jpg" loading="lazy" alt="People having a meeting" sizes="(max-width: 767px) 92vw, (max-width: 991px) 29vw, 30vw" srcset="assets/images/home-2-p-500.jpeg 500w, assets/images/home-2-p-800.jpeg 800w, assets/images/home-2.jpg 1024w" class="company_header_image"/></div><div class="company_header_image-wrapper"><img src="assets/images/home-3-54.jpg" loading="lazy" alt="People having a meeting" sizes="(max-width: 767px) 92vw, (max-width: 991px) 29vw, 30vw" srcset="assets/images/home-3-p-500.jpeg 500w, assets/images/home-3-p-800.jpeg 800w, assets/images/home-3.jpg 1024w" class="company_header_image"/></div><div class="company_header_image-wrapper"><img src="assets/images/home-4-52.jpg" loading="lazy" alt="Women having a meeting" sizes="(max-width: 767px) 92vw, (max-width: 991px) 29vw, 30vw" srcset="assets/images/home-4-p-500.jpeg 500w, assets/images/home-4-p-800.jpeg 800w, assets/images/home-4.jpg 1024w" class="company_header_image"/><div class="stripe_horizontal-wrapper is-top"><div class="box_stripe"></div><div class="box_stripe is-light-orange"></div><div class="box_stripe is-blue"></div></div></div></div></div></div></div></div></header><section class="section_company-story"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="company_story_component"><div class="company_story_top-row"><div class="company_story_top-left"><div class="box_square is-blue-small"></div><h2 class="text-style-subheader">Our story 👇</h2><div class="padding-bottom padding-small"></div><h3>From startups to titans of the industry</h3><div class="padding-bottom padding-small"></div><p>Through True Rich Attended does no end it his mother since favourable real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense of gay produce excited perceived do an a china mean</p></div><div class="company_story_top-right"><div class="company_story_top-right-cell"><div class="stats_number-wrapper"><div class="text-size-xlarge text-weight-semibold">1560+</div><div class="stripe_horizontal-wrapper is-thin is-30"><div class="box_stripe is-blue"></div><div class="box_stripe is-light-orange"></div><div class="box_stripe"></div></div><div class="text-weight-medium">Projects delivered</div></div></div><div class="company_story_top-right-cell"><div class="stats_number-wrapper"><div class="text-size-xlarge text-weight-semibold">100+</div><div class="stripe_horizontal-wrapper is-thin is-30"><div class="box_stripe is-blue"></div><div class="box_stripe is-light-orange"></div><div class="box_stripe"></div></div><div class="text-weight-medium">Professional workers</div></div></div><div class="company_story_top-right-cell"><div class="stats_number-wrapper"><div class="text-size-xlarge text-weight-semibold">950+</div><div class="stripe_horizontal-wrapper is-thin is-30"><div class="box_stripe is-blue"></div><div class="box_stripe is-light-orange"></div><div class="box_stripe"></div></div><div class="text-weight-medium">Happy clients</div></div></div><div class="company_story_top-right-cell"><div class="stats_number-wrapper"><div class="text-size-xlarge text-weight-semibold">10 yrs</div><div class="stripe_horizontal-wrapper is-thin is-30"><div class="box_stripe is-blue"></div><div class="box_stripe is-light-orange"></div><div class="box_stripe"></div></div><div class="text-weight-medium">Experience</div></div></div></div></div><div class="company_story_bottom-row"><img src="assets/icons/logo-dark-5.svg" loading="lazy" alt="Sample logo black" class="company_story_logo"/><img src="assets/icons/logo-dark-4.svg" loading="lazy" alt="Sample logo black" class="company_story_logo"/><img src="assets/icons/logo-dark-3.svg" loading="lazy" alt="Sample logo black" class="company_story_logo"/><img src="assets/icons/logo-dark-1.svg" loading="lazy" alt="Sample logo black" class="company_story_logo"/><img src="assets/icons/logo-dark-2.svg" loading="lazy" alt="Sample logo black" class="company_story_logo"/></div></div></div></div></div></section><section class="section_features"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="features_component"><div class="features_content-left"><h2 class="text-style-subheader">Our expertise</h2><h2>We want to get local identification in every corner of the world in this era of global citizenship</h2><div class="padding-bottom padding-small"></div><p class="text-style-muted">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded.</p></div><div class="features_list"><div class="box_square is-blue-small is-absolute-top"></div><div class="features_item"><div class="features_icon-wrapper"><img src="assets/icons/rocket.svg" loading="lazy" alt="Rocket icon" class="features_icon"/></div><div class="features_text-wrapper"><div class="text-weight-medium">On time delivery</div><div class="padding-bottom padding-xsmall"></div><p class="text-size-small text-style-muted">Through True Rich Attended does no end it his mother since real had half every him.</p></div></div><div class="features_item"><div class="features_icon-wrapper"><img src="assets/icons/settings.svg" loading="lazy" alt="Settings icon" class="features_icon"/></div><div class="features_text-wrapper"><div class="text-weight-medium">Best Quality</div><div class="padding-bottom padding-xsmall"></div><p class="text-size-small text-style-muted">Through True Rich Attended does no end it his mother since real had half every him.</p></div></div><div class="features_item"><div class="features_icon-wrapper"><img src="assets/icons/support.svg" loading="lazy" alt="Support icon" class="features_icon"/></div><div class="features_text-wrapper"><div class="text-weight-medium">Support Assist</div><div class="padding-bottom padding-xsmall"></div><p class="text-size-small text-style-muted">Through True Rich Attended does no end it his mother since real had half every him.</p></div></div><div class="stripe_horizontal-wrapper is-bottom-left"><div class="box_stripe is-blue"></div><div class="box_stripe is-light-orange"></div><div class="box_stripe"></div></div></div></div></div></div></div></section><section class="section_company-vision"><div class="padding-global"><div class="container-large"><div class="padding-section-medium"><div class="company_vision_component"><div class="max-width-large"><h2 class="text-style-subheader">Our vision</h2><h3>We want to get local identification in every corner of the world in this era of global citizenship</h3><div class="padding-bottom padding-small"></div><p class="text-style-muted">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded.</p></div><div class="company_vision_image-wrapper"><img src="assets/images/blog-main-1-48.jpg" loading="lazy" alt="Coworkers playing table tennis" sizes="(max-width: 991px) 92vw, (max-width: 1361px) 94vw, 1280px" srcset="assets/images/blog-main-1-p-500.jpeg 500w, assets/images/blog-main-1.jpg 1280w" class="company_vision_image"/></div></div></div></div></div></section><section class="section_company-team"><div class="padding-global"><div class="container-large"><div class="padding-bottom padding-huge"><div class="max-width-large"><h2 class="text-style-subheader">Meet our team</h2><h3>Teamwork is the only way we work</h3><div class="padding-bottom padding-small"></div><p class="text-style-muted">Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded.</p></div><div class="company_team_component"><div class="company_team_list-wrapper w-dyn-list"><div role="list" class="company_team_list w-dyn-items"><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Javena Melo</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">CEO</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-1.jpg" class="company_team_image"/></div><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Tyrel Monahan</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">CFO</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-2.jpg" class="company_team_image"/></div><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Lyric Champlin</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">President</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-3-75.jpg" class="company_team_image"/></div><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Alex Williamson</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">Manager</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-4-76.jpg" class="company_team_image"/></div><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Dallas Wilkinson</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">Vice President</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-5.jpg" class="company_team_image"/></div><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Lazaro Crist</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">Vice President</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-6.jpg" class="company_team_image"/></div><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Cicero Blick</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">HR Manager</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-7-79.jpg" class="company_team_image"/></div><div data-w-id="257ff04b-a007-4d0a-99bd-02a065399d0e" role="listitem" class="company_team_item w-dyn-item"><div style="display:none;opacity:0" class="company_team_info-wrapper"><a href="team-single.html" class="company_team_title-link w-inline-block"><div class="text-size-large text-weight-semibold">Vladimir Zhukov</div></a><div class="padding-bottom padding-xsmall"></div><div class="text-style-muted text-size-small">Marketing</div><div class="padding-bottom padding-xsmall"></div><div class="social_component"><a aria-label="Facebook link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="LinkedIn link" href="http://www.finsweet.com" class="social_link w-inline-block"><div class="social_icon w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div><img alt="Team member profile picture" loading="lazy" style="filter:grayscale(0%)" src="assets/images/team-8.jpg" class="company_team_image"/></div></div></div><div class="company_team_cta"><div class="box_group-corner is-top-left is-big"><div class="box_corner"><div class="box_corner inner-box"></div></div><div class="box_corner is-bottom-box is-50-white"></div><div class="box_corner is-right-box is-50-white"></div></div><h3>Want to take on new challenges? Join our team!</h3><a href="careers.html" class="button-secondary w-button">View openings</a><div class="stripe_vertical-wrapper is-right-in"><div class="box_stripe"></div><div class="box_stripe is-light-orange"></div><div class="box_stripe is-blue"></div></div></div></div></div></div></div></section></main><footer class="footer_component"><div class="padding-global"><div class="container-large"><div class="footer_top-wrapper"><div class="box_group-corner is-top-left"><div class="box_corner"><div class="box_corner inner-box"></div></div><div class="box_corner is-bottom-box"></div><div class="box_corner is-right-box"></div></div><div class="footer_top-left-wrapper"><h2>Let&#x27;s make<br/>something special</h2><div class="padding-bottom padding-small"></div><div class="text-size-large text-weight-medium">Let&#x27;s talk! 🤙</div><div class="padding-bottom padding-small"></div><div class="footer_link-list"><a href="tel:+1234567890" class="text-style-link">+123 456-7890</a><a href="mailto:hello@finsweet.com" class="text-style-link">hello@finsweet.com</a></div><a href="https://finsweet.com/client-first" target="_blank" class="footer_address-wrapper w-inline-block"><div>Built with Client-First Style System</div></a></div><div class="footer_top-right-wrapper"><div id="w-node-_7c4dd3ca-1b11-b71f-2f9d-badf0a146e35-0a146e1f" class="footer_menu-wrapper"><div class="footer_link-list"><a href="index.html" class="footer_link text-weight-medium">Home</a><a href="services.html" class="footer_link text-weight-medium">Services</a><a href="company.html" aria-current="page" class="footer_link text-weight-medium w--current">Company</a><a href="careers.html" class="footer_link text-weight-medium">Careers</a><a href="blog.html" class="footer_link text-weight-medium">Blog</a></div><div class="footer_link-col"><div class="text-size-medium text-weight-medium">Services</div><div class="footer_link-list"><a href="/services#technical-support" class="footer_link text-size-small">Technical support</a><a href="/services#development" class="footer_link text-size-small">Development</a><a href="/services#AWS" class="footer_link text-size-small">AWS/Azure</a><a href="/services#consulting" class="footer_link text-size-small">Consultancy</a><a href="/services#IT" class="footer_link text-size-small">Information Technology</a></div></div><div class="footer_link-col"><div class="text-size-medium text-weight-medium">Resources</div><div class="footer_link-list"><a href="privacy-policy.html" class="footer_link text-size-small">Privacy policy</a></div></div></div><div class="footer_button-wrapper"><div class="stripe_horizontal-wrapper is-footer-button-stripe"><div class="box_stripe is-light-orange"></div><div class="box_stripe is-blue"></div><div class="box_stripe is-blue"></div></div><a data-w-id="0f897a69-fec8-cf5a-00da-f2881a613988" href="https://finsweet.info/client-first-template-3" target="_blank" class="button-text is-black w-inline-block"><div class="text-weight-medium">Clone project</div><div class="button-arrow-icon is-black w-embed"><svg width="100%" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 6H23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 1L23 6L18 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></a></div></div></div></div></div><div class="footer_bottom-wrapper"><div class="padding-global"><div class="container-large"><div class="footer_bottom-row"><div class="footer_bottom-left-content"><a href="https://www.finsweet.com/" target="_blank" class="footer_logo-link w-inline-block"><img src="assets/icons/finsweet-logo-full-black-69.svg" loading="lazy" alt="" class="footer_logo"/></a><div>©2023 Finsweet</div></div><div id="w-node-_7c4dd3ca-1b11-b71f-2f9d-badf0a146e63-0a146e1f" class="social_component"><a aria-label="Facebook link" href="https://www.finsweet.com" target="_blank" class="social_link w-inline-block"><div class="social_icon is-dark w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 11.993 2.92547 15.3027 6.75 15.9028V10.3125H4.71875V8H6.75V6.2375C6.75 4.2325 7.94438 3.125 9.77172 3.125C10.6467 3.125 11.5625 3.28125 11.5625 3.28125V5.25H10.5538C9.56 5.25 9.25 5.86672 9.25 6.5V8H11.4688L11.1141 10.3125H9.25V15.9028C13.0745 15.3027 16 11.993 16 8Z" fill="currentcolor"/>
+</svg></div></a><a aria-label="Twitter link" href="https://www.finsweet.com" target="_blank" class="social_link w-inline-block"><div class="social_icon is-dark w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(assets/images/)">
+<path d="M5.03344 14.5C11.0697 14.5 14.3722 9.4978 14.3722 5.16124C14.3722 5.02062 14.3691 4.87687 14.3628 4.73624C15.0052 4.27164 15.5597 3.69617 16 3.03687C15.4017 3.30307 14.7664 3.47692 14.1159 3.55249C14.8009 3.14194 15.3137 2.49698 15.5594 1.73718C14.915 2.11904 14.2104 2.38841 13.4756 2.53374C12.9806 2.00771 12.326 1.65941 11.6131 1.5427C10.9003 1.42599 10.1688 1.54737 9.53183 1.88806C8.89486 2.22876 8.38787 2.7698 8.08923 3.42754C7.7906 4.08528 7.71695 4.82308 7.87969 5.52687C6.575 5.46139 5.29862 5.12247 4.13332 4.53207C2.96802 3.94166 1.9398 3.11296 1.11531 2.09968C0.696266 2.82216 0.568038 3.6771 0.756687 4.49073C0.945337 5.30436 1.43671 6.01563 2.13094 6.47999C1.60975 6.46344 1.09998 6.32312 0.64375 6.07062V6.11124C0.643283 6.86943 0.905399 7.60439 1.38554 8.19118C1.86568 8.77797 2.53422 9.18037 3.2775 9.32999C2.7947 9.46209 2.28799 9.48133 1.79656 9.38624C2.0063 10.0383 2.41438 10.6086 2.96385 11.0176C3.51331 11.4265 4.17675 11.6537 4.86156 11.6675C3.69895 12.5807 2.26278 13.0761 0.784375 13.0737C0.522191 13.0733 0.260266 13.0573 0 13.0256C1.5019 13.9892 3.24902 14.5009 5.03344 14.5Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg></div></a><a aria-label="Linkedin link" href="https://www.finsweet.com" target="_blank" class="social_link w-inline-block"><div class="social_icon is-dark w-embed"><svg aria-hidden="true" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8156 0H1.18125C0.528125 0 0 0.515625 0 1.15313V14.8438C0 15.4813 0.528125 16 1.18125 16H14.8156C15.4688 16 16 15.4813 16 14.8469V1.15313C16 0.515625 15.4688 0 14.8156 0ZM4.74687 13.6344H2.37188V5.99687H4.74687V13.6344ZM3.55938 4.95625C2.79688 4.95625 2.18125 4.34062 2.18125 3.58125C2.18125 2.82188 2.79688 2.20625 3.55938 2.20625C4.31875 2.20625 4.93437 2.82188 4.93437 3.58125C4.93437 4.3375 4.31875 4.95625 3.55938 4.95625ZM13.6344 13.6344H11.2625V9.92188C11.2625 9.0375 11.2469 7.89687 10.0281 7.89687C8.79375 7.89687 8.60625 8.8625 8.60625 9.85938V13.6344H6.2375V5.99687H8.5125V7.04063H8.54375C8.85938 6.44063 9.63438 5.80625 10.7875 5.80625C13.1906 5.80625 13.6344 7.3875 13.6344 9.44375V13.6344Z" fill="currentColor"/>
+</svg></div></a></div></div></div></div></div></footer></div><script src="js/main.js"></script></body></html>
